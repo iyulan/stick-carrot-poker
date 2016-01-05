@@ -38,6 +38,7 @@ group :test, :development do
   gem 'byebug'
   gem 'dotenv-rails'
   gem 'rspec-rails', '~> 3.0'
+  gem 'shoulda-matchers'
   gem 'rubocop', require: false
   gem 'spring'
   gem 'web-console', '~> 2.0'
