@@ -10,6 +10,15 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+ *
  *= require_self
+ *= require cosmo/loader
+ *= require cosmo/bootswatch
  */
+
+.nav > li > span {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #9d9d9d;
+}

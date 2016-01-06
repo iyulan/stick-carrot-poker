@@ -8,6 +8,13 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'react-rails', '~> 1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'sorcery', '~> 0.9'
+gem 'validates_email_format_of'
+gem 'slim-rails'
+gem 'twitter-bootswatch-rails', '~> 3.3.4'
+gem 'twitter-bootswatch-rails-helpers'
+gem 'therubyracer'
+gem 'less-rails', github: 'metaskills/less-rails'
 
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
@@ -43,4 +50,3 @@ group :test, :development do
   gem 'spring'
   gem 'web-console', '~> 2.0'
 end
-
