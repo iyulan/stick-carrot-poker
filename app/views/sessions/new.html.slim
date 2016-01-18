@@ -1,18 +1,15 @@
 .row
   .col-md-4.col-md-offset-4
-    h1 = 'Log In'
+    h1 = t('sessions.new.title')
     = form_tag sessions_path, method: :post do
       .form-group
-        = label_tag :email
+        = label_tag :email, t('activerecord.attributes.session.email')
         = email_field_tag :email, nil, class: 'form-control', required: true
-
       .form-group
-        = label_tag :password
+        = label_tag :password, t('activerecord.attributes.session.password')
         = password_field_tag :password, nil, class: 'form-control', required: true
-
       .form-group
         = check_box_tag :remember_me
         = ' '
-        = label_tag :remember_me
-
-      = submit_tag 'Log In', class: 'btn btn-primary btn'
+        = label_tag :remember_me, t('activerecord.attributes.session.remember_me')
+      = submit_tag t('sessions.new.submit'), class: 'btn btn-primary btn'

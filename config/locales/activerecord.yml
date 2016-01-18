@@ -13,7 +13,16 @@ en:
               confirmation: 'confirm'
             password_confirmation:
               confirmation: 'confirm'
-
+    attributes:
+      user:
+        name: 'Name'
+        email: 'E-mail'
+        password: 'Password'
+        password_confirmation: 'Password confirmation'
+      session:
+        email: 'E-mail'
+        password: 'Password'
+        remember_me: 'Remember me'
 
 ru:
   activerecord:
@@ -30,3 +39,13 @@ ru:
               confirmation: 'подтвердить'
             password_confirmation:
               confirmation: 'подтвердить'
+    attributes:
+      user:
+        name: 'Имя'
+        email: 'Почта'
+        password: 'Пароль'
+        password_confirmation: 'Подтвердите пароль'
+      session:
+        email: 'Почта'
+        password: 'Пароль'
+        remember_me: 'Запомнить меня'

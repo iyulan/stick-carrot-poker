@@ -35,12 +35,12 @@
           className: 'btn btn-xs btn-default'
           id: "edit-act-#{@props.act.id}"
           onClick: @handleToggle
-          I18n.t('act.index.table.edit')
+          I18n.t('acts.index.table.edit')
         React.DOM.a
           className: 'btn btn-xs btn-danger'
           id: "delete-act-#{@props.act.id}"
           onClick: @handleDelete
-          I18n.t('act.index.table.delete')
+          I18n.t('acts.index.table.delete')
   actForm: ->
     React.DOM.tr null,
       React.DOM.td null,
@@ -62,12 +62,12 @@
           className: 'btn btn-xs btn-default'
           id: "update-act-#{@props.act.id}"
           onClick: @handleEdit
-          I18n.t('act.index.table.update')
+          I18n.t('acts.index.table.update')
         React.DOM.a
           className: 'btn btn-xs btn-danger'
           id: "cancel-act-#{@props.act.id}"
           onClick: @handleToggle
-          I18n.t('act.index.table.cancel')
+          I18n.t('acts.index.table.cancel')
   render: ->
     if @state.edit
       @actForm()

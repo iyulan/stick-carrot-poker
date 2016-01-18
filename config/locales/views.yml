@@ -1,5 +1,12 @@
 en:
-  act:
+  head:
+    title: 'StickCarrotPoker'
+  navigation:
+    root: 'SCP'
+    sign_in: 'Sign In'
+    sign_out: 'Sign Out'
+    sign_up: 'Sign Up'
+  acts:
     index:
       title: 'My acts'
       table:
@@ -14,9 +21,32 @@ en:
         title: 'Title'
         points: 'Points'
         create: 'Create act'
+  sessions:
+    create:
+      success: 'Welcome back!'
+      warning: 'E-mail and/or password is incorrect.'
+    destroy:
+      success: 'See you!'
+    new:
+      title: 'Log In'
+      submit: 'Log In'
+  users:
+    create:
+      danger: 'Oops!'
+      success: 'Welcome, %{name}!'
+    new:
+      title: 'Registration'
+      submit: 'Register'
 
 ru:
-  act:
+  head:
+    title: 'КнутПряникПокер'
+  navigation:
+    root: 'КПП'
+    sign_in: 'Войти'
+    sign_out: 'Выйти'
+    sign_up: 'Регистрация'
+  acts:
     index:
       title: 'Мои действия'
       table:
@@ -31,3 +61,19 @@ ru:
         title: 'Название'
         points: 'Баллы'
         create: 'Создать действие'
+  sessions:
+    create:
+      success: 'Добро пожаловать снова'
+      warning: 'E-mail и/или пароль некорректны'
+    destroy:
+      success: 'До скорого!'
+    new:
+      title: 'Войти'
+      submit: 'Войти'
+  users:
+    create:
+      danger: 'Упс!'
+      success: 'Добро пожаловать, %{name}!'
+    new:
+      title: 'Регистрация'
+      submit: 'Создать'

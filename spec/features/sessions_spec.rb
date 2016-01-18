@@ -10,18 +10,18 @@ feature 'Sessions' do
   end
 
   scenario 'load sign_in page' do
-    expect(page).to have_content('Log In')
+    expect(page).to have_content(I18n.t('sessions.new.title'))
   end
 
   scenario 'success sign in' do
     sign_in(user.email, password)
 
-    expect(page).to have_selector('div.alert.alert-success', text: 'Welcome back!')
+    expect(page).to have_selector('div.alert.alert-success', text: I18n.t('sessions.create.success'))
   end
 
   scenario 'failed sign in' do
     sign_in(user.email, incorrect_password)
 
-    expect(page).to have_selector('div.alert.alert-warning', text: 'E-mail and/or password is incorrect.')
+    expect(page).to have_selector('div.alert.alert-warning', text: I18n.t('sessions.create.warning'))
   end
 end

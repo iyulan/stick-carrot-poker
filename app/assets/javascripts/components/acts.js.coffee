@@ -19,7 +19,7 @@
       className: 'acts'
       React.DOM.h2
         className: 'title'
-        I18n.t('act.index.title')
+        I18n.t('acts.index.title')
       React.createElement ActForm, handleNewAct: @addAct
       React.DOM.hr null
       React.DOM.table
@@ -33,9 +33,9 @@
             width: '50%'
         React.DOM.thead null,
           React.DOM.tr null,
-            React.DOM.th null, I18n.t('act.index.table.title')
-            React.DOM.th null, I18n.t('act.index.table.points')
-            React.DOM.th null, I18n.t('act.index.table.actions')
+            React.DOM.th null, I18n.t('acts.index.table.title')
+            React.DOM.th null, I18n.t('acts.index.table.points')
+            React.DOM.th null, I18n.t('acts.index.table.actions')
         React.DOM.tbody null,
           for act in @state.acts
             React.createElement Act, key: act.id, act: act, handleEditAct: @updateAct, handleDeleteAct: @deleteAct

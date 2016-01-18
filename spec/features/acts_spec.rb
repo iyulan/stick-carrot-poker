@@ -12,7 +12,7 @@ feature 'Acts', js: true do
   end
 
   scenario 'load acts index page' do
-    expect(page).to have_content(I18n.t('act.index.title'))
+    expect(page).to have_content(I18n.t('acts.index.title'))
     expect(page).to have_content(act.title)
   end
 

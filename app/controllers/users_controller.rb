@@ -10,8 +10,8 @@ class UsersController < ApplicationController
     if @user.save
       login_and_redirect
     else
-      flash[:danger] = 'Oops!'
-      render 'new'
+      flash[:danger] = t('users.create.danger')
+      render :new
     end
   end
 
@@ -23,7 +23,7 @@ class UsersController < ApplicationController
 
   def login_and_redirect
     login(params[:user][:email], params[:user][:password])
-    flash[:success] = "Welcome, #{@user.name}!"
+    flash[:success] = t('users.create.success', name: @user.name)
     redirect_to authenticated_root_path
   end
 end
