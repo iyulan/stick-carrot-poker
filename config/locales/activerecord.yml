@@ -1,0 +1,32 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: 'cant be blank'
+            email:
+              blank: 'cant be blank'
+              email_format: 'invalid format'
+            password:
+              confirmation: 'confirm'
+            password_confirmation:
+              confirmation: 'confirm'
+
+
+ru:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: 'не может быть пустым'
+            email:
+              blank: 'не может быть пустым'
+              email_format: 'неправильный формат'
+            password:
+              confirmation: 'подтвердить'
+            password_confirmation:
+              confirmation: 'подтвердить'

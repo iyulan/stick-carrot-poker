@@ -15,6 +15,7 @@ gem 'twitter-bootswatch-rails', '~> 3.3.4'
 gem 'twitter-bootswatch-rails-helpers'
 gem 'therubyracer'
 gem 'less-rails', github: 'metaskills/less-rails'
+gem 'i18n-js', '>= 3.0.0.rc11'
 
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc

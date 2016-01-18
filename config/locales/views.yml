@@ -1,0 +1,33 @@
+en:
+  act:
+    index:
+      title: 'My acts'
+      table:
+        title: 'Title'
+        points: 'Points'
+        actions: 'Actions'
+        edit: 'Edit'
+        delete: 'Delete'
+        update: 'Update'
+        cancel: 'Cancel'
+      form:
+        title: 'Title'
+        points: 'Points'
+        create: 'Create act'
+
+ru:
+  act:
+    index:
+      title: 'Мои действия'
+      table:
+        title: 'Название'
+        points: 'Баллы'
+        actions: 'Действия'
+        edit: 'Редактировать'
+        delete: 'Удалить'
+        update: 'Изменить'
+        cancel: 'Отменить'
+      form:
+        title: 'Название'
+        points: 'Баллы'
+        create: 'Создать действие'

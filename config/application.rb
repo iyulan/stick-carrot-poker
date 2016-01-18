@@ -37,5 +37,11 @@ module StickCarrotPoker
       g.test_framework :rspec, views: false, fixture: true
       g.fixture_replacement :factory_girl, dir: 'spec/factories'
     end
+    config.react.addons = true
+    config.middleware.use I18n::JS::Middleware
+
+    config.i18n.enforce_available_locales = false
+    config.i18n.available_locales = [:ru, :en]
+    config.i18n.default_locale = :ru
   end
 end

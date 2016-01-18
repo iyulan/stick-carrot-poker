@@ -4,7 +4,8 @@ class User < ActiveRecord::Base
   has_many :acts
 
   validates :name, presence: true
-  validates :email, presence: true, uniqueness: true, email_format: { message: 'has invalid format' }
+  validates :email, presence: true, uniqueness: true,
+                    email_format: { message: I18n.t('activerecord.errors.models.user.attributes.email.email_format') }
   validates :password, length: { minimum: 6 }
   validates :password, confirmation: true
 end
