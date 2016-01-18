@@ -1,5 +1,9 @@
 source 'https://rubygems.org'
 
+source 'https://rails-assets.org' do
+  gem 'rails-assets-es5-shim'
+end
+
 gem 'rails', '4.2.4'
 gem 'mysql2', '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'

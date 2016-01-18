@@ -1,6 +1,6 @@
 class ActsController < ApplicationController
   def index
-    @acts = Act.all
+    @acts = current_user.acts
   end
 
   def create

@@ -24,7 +24,7 @@
       React.DOM.hr null
       React.DOM.table
         className: 'table table-bordered'
-        React.DOM.colgroup null
+        React.DOM.colgroup null,
           React.DOM.col
             width: '30%'
           React.DOM.col

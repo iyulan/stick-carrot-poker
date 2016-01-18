@@ -38,6 +38,8 @@ end
 # If you are not using ActiveRecord, you can remove this line.
 ActiveRecord::Migration.maintain_test_schema!
 
+Dir[Rails.root.join('spec', 'support', '**', '*.rb')].each { |f| require f }
+
 RSpec.configure do |config|
   config.include FactoryGirl::Syntax::Methods
   # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
@@ -87,5 +89,9 @@ RSpec.configure do |config|
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
   # config.filter_gems_from_backtrace("gem name")
+  Capybara.register_driver :poltergeist do |app|
+    Capybara::Poltergeist::Driver.new(app, js_errors: false)
+  end
+
   Capybara.javascript_driver = :poltergeist
 end

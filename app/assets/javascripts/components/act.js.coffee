@@ -33,10 +33,12 @@
       React.DOM.td null,
         React.DOM.a
           className: 'btn btn-xs btn-default'
+          id: "edit-act-#{@props.act.id}"
           onClick: @handleToggle
           I18n.t('act.index.table.edit')
         React.DOM.a
           className: 'btn btn-xs btn-danger'
+          id: "delete-act-#{@props.act.id}"
           onClick: @handleDelete
           I18n.t('act.index.table.delete')
   actForm: ->
@@ -44,22 +46,26 @@
       React.DOM.td null,
         React.DOM.input
           className: 'form-control input-sm'
+          id: "act-title-#{@props.act.id}"
           type: 'text'
           defaultValue: @props.act.title
           ref: 'title'
       React.DOM.td null,
         React.DOM.input
           className: 'form-control input-sm'
+          id: "act-points-#{@props.act.id}"
           type: 'number'
           defaultValue: @props.act.points
           ref: 'points'
       React.DOM.td null,
         React.DOM.a
           className: 'btn btn-xs btn-default'
+          id: "update-act-#{@props.act.id}"
           onClick: @handleEdit
           I18n.t('act.index.table.update')
         React.DOM.a
           className: 'btn btn-xs btn-danger'
+          id: "cancel-act-#{@props.act.id}"
           onClick: @handleToggle
           I18n.t('act.index.table.cancel')
   render: ->
