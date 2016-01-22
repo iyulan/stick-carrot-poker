@@ -8,5 +8,6 @@ describe Act do
 
   describe 'associtations' do
     it { should belong_to(:user) }
+    it { should have_many(:results) }
   end
 end

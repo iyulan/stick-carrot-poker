@@ -13,5 +13,6 @@ describe User do
 
   describe 'associtations' do
     it { should have_many(:acts) }
+    it { should have_many(:results) }
   end
 end
