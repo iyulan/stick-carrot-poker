@@ -48,8 +48,7 @@
           React.DOM.tr null,
             React.DOM.th null, I18n.t('acts.index.table.title')
             React.DOM.th null, I18n.t('acts.index.table.points')
-            React.DOM.th null, I18n.t('acts.index.table.actions')
+            React.DOM.th null,
         React.DOM.tbody null,
           for act in @state.acts.slice(@props.pageSize * (@state.page - 1), @props.pageSize * @state.page)
             React.createElement Act, key: act.id, act: act, handleEditAct: @updateAct, handleDeleteAct: @deleteAct
-
