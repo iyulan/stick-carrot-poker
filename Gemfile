@@ -35,6 +35,7 @@ group :test do
   gem 'factory_girl_rails', '~> 4.0'
   gem 'faker'
   gem 'poltergeist', '~> 1.6.0'
+  gem 'capybara-screenshot'
 end
 
 # Use ActiveModel has_secure_password

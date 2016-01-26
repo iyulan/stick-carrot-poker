@@ -10,6 +10,7 @@ require 'shoulda/matchers'
 require 'capybara/rspec'
 require 'capybara/poltergeist'
 require 'database_cleaner'
+require 'capybara-screenshot/rspec'
 
 Shoulda::Matchers.configure do |config|
   config.integrate do |with|

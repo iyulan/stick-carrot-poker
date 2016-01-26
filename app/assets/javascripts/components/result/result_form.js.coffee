@@ -30,6 +30,7 @@
         className: 'form-group'
         React.DOM.select
           className: 'form-control'
+          id: 'act_id'
           name: 'act_id'
           value: @state.act_id
           onChange: @handleChange
@@ -45,5 +46,6 @@
       React.DOM.button
         type: 'submit'
         className: 'btn btn-primary'
+        id: 'result-submit'
         disabled: !@valid()
         I18n.t('results.index.form.create')

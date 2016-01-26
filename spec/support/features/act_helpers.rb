@@ -4,8 +4,8 @@ module Features
       within('form') do
         fill_in I18n.t('acts.index.form.title'), with: title
         fill_in I18n.t('acts.index.form.points'), with: points
+        click_button I18n.t('acts.index.form.create')
       end
-      click_button I18n.t('acts.index.form.create')
     end
   end
 end
