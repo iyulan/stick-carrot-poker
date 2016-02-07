@@ -26,7 +26,7 @@ feature 'Results', js: true do
       find("a[id='update-result-#{result.id}']").click
     end
 
-    expect(page).to have_content(date)
+    expect(page).not_to have_content(result.act.title)
   end
 
   scenario 'delete result' do

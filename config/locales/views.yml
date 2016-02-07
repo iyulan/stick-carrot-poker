@@ -3,6 +3,7 @@ en:
     title: 'StickCarrotPoker'
   navigation:
     root: 'SCP'
+    acts: 'Acts'
     sign_in: 'Sign In'
     sign_out: 'Sign Out'
     sign_up: 'Sign Up'
@@ -23,6 +24,7 @@ en:
   results:
     index:
       title: 'My results'
+      box_title: 'Result for %{date}'
       table:
         date: 'Date'
         act: 'Act'
@@ -56,6 +58,7 @@ ru:
     title: 'КнутПряникПокер'
   navigation:
     root: 'КПП'
+    acts: 'Действия'
     sign_in: 'Войти'
     sign_out: 'Выйти'
     sign_up: 'Регистрация'
@@ -76,6 +79,7 @@ ru:
   results:
     index:
       title: 'Мои результаты'
+      box_title: 'Результат за %{date}'
       table:
         date: 'Дата'
         act: 'Действие'

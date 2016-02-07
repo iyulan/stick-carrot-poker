@@ -17,6 +17,14 @@
  *= require bootstrap-datepicker
  */
 
+div.main {
+  margin-top: 50px;
+}
+
+.form-group {
+  margin-right: 10px
+}
+
 .nav > li > span {
   display: block;
   padding-top: 15px;
@@ -27,4 +35,10 @@
 
 .result-calendar {
   overflow: hidden;
+}
+
+.result-box-text {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }

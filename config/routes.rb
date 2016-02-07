@@ -11,6 +11,10 @@ Rails.application.routes.draw do
     delete '/sign_out', to: 'sessions#destroy', as: :sign_out
 
     resources :acts, except: [:new, :edit, :show]
-    resources :results, except: [:new, :edit, :show]
+    resources :results, except: [:new, :edit, :show] do
+      collection do
+        get :data
+      end
+    end
   end
 end

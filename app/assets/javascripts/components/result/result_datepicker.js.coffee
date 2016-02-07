@@ -7,8 +7,11 @@
       todayBtn: 'linked'
       todayHighlight: true
       format: 'yyyy-mm-dd'
-    ).on('changeDate', (date) ->
-      that.props.selectDate $(@).data('datepicker').getFormattedDate('yyyy-mm-dd')
+    ).on('changeDate', (e) ->
+      date = $(@).data('datepicker').getFormattedDate('yyyy-mm-dd')
+      $.get '/results/data.json', { date: date }, (data) =>
+        that.props.selectDate data, date
+      , 'JSON'
     )
   render: ->
     React.DOM.div

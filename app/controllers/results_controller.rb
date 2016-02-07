@@ -1,7 +1,12 @@
 class ResultsController < ApplicationController
   def index
-    @results = current_user.results
+    @results = current_user.results.for(Date.today)
     @acts = current_user.acts
+  end
+
+  def data
+    date = params[:date] || Date.today
+    render json: current_user.results.for(date)
   end
 
   def create

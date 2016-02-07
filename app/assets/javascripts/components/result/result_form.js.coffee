@@ -11,8 +11,10 @@
       @setState @getInitialState()
     , 'JSON'
   getInitialState: ->
-    date: @props.currentDate
+    date: @props.date
     act_id: '0'
+  componentWillReceiveProps: (newProps) ->
+    @setState date: newProps.date
   render: ->
     React.DOM.form
       className: 'form-inline'
