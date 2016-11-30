@@ -5,7 +5,6 @@ source 'https://rails-assets.org' do
 end
 
 gem 'rails', '4.2.4'
-gem 'mysql2', '~> 0.3.18'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
@@ -27,6 +26,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :production do
   gem 'utf8-cleaner'
+  gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :test do
@@ -48,6 +49,7 @@ end
 # gem 'capistrano-rails', group: :development
 
 group :test, :development do
+  gem 'mysql2', '~> 0.3.18'
   gem 'awesome_print'
   gem 'byebug'
   gem 'dotenv-rails'
